@@ -1,6 +1,13 @@
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chudichen/spring-cloud/tree/master/config
+          searchPaths: data
+
 eureka:
   client:
     service-url:
