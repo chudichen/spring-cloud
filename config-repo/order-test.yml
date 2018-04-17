@@ -3,15 +3,13 @@ env:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://www.test.com:8761/eureka
 spring:
-  application:
-    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: Star.123Mysql
-    url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&characterSetResults=utf-8&useUnicode=true&useSSL=true&autoReconnect=true
+    url: jdbc:mysql://www.test.com/sell?characterEncoding=utf-8&characterSetResults=utf-8&useUnicode=true&useSSL=true&autoReconnect=true
 server:
   port: 8502
 
