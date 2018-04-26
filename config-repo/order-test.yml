@@ -18,19 +18,11 @@ spring:
   cloud:
     stream:
       bindings:
-        mq1:
-          group: queueName
-          destination: exchangeName
         input:
-          group: queueName
-          destination: destination
-      mqScoreOutput:
-        destination: exchangeName2
-        contentType: application/json
-      mqScoreInput:
-        group: queueName2
-        destination: exchangeName2
-        contentType: application/json
+          destination: mqTestDefault
+        output:
+          destination: mqTestDefault
+          contentType: text/json
 server:
   port: 8502
 
