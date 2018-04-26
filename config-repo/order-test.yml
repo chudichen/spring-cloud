@@ -22,7 +22,7 @@ spring:
           destination: mqTestDefault
         output:
           destination: mqTestDefault
-          contentType: text/json
+          contentType: application/json
 server:
   port: 8502
 
