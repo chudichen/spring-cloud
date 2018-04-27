@@ -8,5 +8,5 @@ zuul:
       # Unfiltered cookie
       sensitiveHeaders:
   # Prohibit external access
-  ignored-patterns:
-    - /product/product/list
+  #ignored-patterns:
+   # - /product/product/list
