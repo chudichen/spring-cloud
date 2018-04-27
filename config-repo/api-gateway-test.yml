@@ -1,0 +1,12 @@
+env:
+  test
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/*
+      serviceId: product
+      # Unfiltered cookie
+      sensitiveHeaders:
+  # Prohibit external access
+  ignored-patterns:
+    - /product/product/list
