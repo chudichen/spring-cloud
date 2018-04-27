@@ -2,11 +2,13 @@ package com.test.product.service.impl;
 
 import com.test.product.ProductApplicationTests;
 import com.test.product.dataobject.ProductInfo;
+import com.test.product.dto.CartDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -35,4 +37,9 @@ public class ProductServiceImplTest extends ProductApplicationTests {
         log.info(list.toString());
     }
 
+    @Test
+    public void testDecreaseStock() throws Exception {
+        CartDTO cartDTO = new CartDTO("157875227953464068", 2);
+        ProductServiceImpl.decreaseStock(Arrays.asList(cartDTO));
+    }
 }

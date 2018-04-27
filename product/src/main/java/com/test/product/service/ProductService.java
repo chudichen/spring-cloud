@@ -1,6 +1,7 @@
 package com.test.product.service;
 
 import com.test.product.dataobject.ProductInfo;
+import com.test.product.dto.CartDTO;
 
 import java.util.List;
 
@@ -25,4 +26,19 @@ public interface ProductService {
      * @return List<ProductInfo>
      */
     List<ProductInfo> findOffShelfProduct();
+
+    /**
+     * Find product list.
+     *
+     * @param productIdList product id list.
+     * @return product info list.
+     */
+    List<ProductInfo> findList(List<String> productIdList);
+
+    /**
+     * Decrease stock quantity.
+     *
+     * @param cartDTOList CartDTO list
+     */
+    void decreaseStock(List<CartDTO> cartDTOList);
 }

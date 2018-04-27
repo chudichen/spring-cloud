@@ -3,6 +3,8 @@ package com.test.product.viewobject;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * Product view object.
  *
@@ -17,4 +19,7 @@ public class ProductVO {
 
     @JsonProperty("type")
     private Integer categoryType;
+
+    @JsonProperty("foods")
+    List<ProductInfoVO> productInfoVOList;
 }

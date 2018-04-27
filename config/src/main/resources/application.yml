@@ -5,9 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/chudichen/spring-cloud/tree/master/config
-          searchPaths: data
-
+          uri: https://github.com/chudichen/spring-cloud
+          search-paths: config-repo
+  rabbitmq:
+    host: 221.4.223.101
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
