@@ -10,5 +10,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://www.test.com:8761/eureka
+    rabbitmq:
+      host: 221.4.223.101
+      port: 5672
+      username: guest
+      password: guest
+    cloud:
+      stream:
+        bindings:
+          input:
+            destination: mqTestDefault
+          output:
+            destination: mqTestDefault
+            contentType: application/json
 server:
   port: 8501
