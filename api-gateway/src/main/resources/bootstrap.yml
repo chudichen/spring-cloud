@@ -1,7 +1,5 @@
 env:
   test
-server:
-  port: 8504
 spring:
   application:
     name: api-gateway

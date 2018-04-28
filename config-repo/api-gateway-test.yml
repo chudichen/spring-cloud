@@ -10,3 +10,5 @@ zuul:
   # Prohibit external access
   #ignored-patterns:
    # - /product/product/list
+server:
+  port: 8504

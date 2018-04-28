@@ -1,0 +1,27 @@
+env:
+  test
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Star.123Mysql
+    url: jdbc:mysql://www.test.com/sell?characterEncoding=utf-8&characterSetResults=utf-8&useUnicode=true&useSSL=true&autoReconnect=true
+  rabbitmq:
+    host: 221.4.223.101
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: mqTestDefault
+        output:
+          destination: mqTestDefault
+          contentType: application/json
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.test.com:8761/eureka
+server:
+  port: 8505
