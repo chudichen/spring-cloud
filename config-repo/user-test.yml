@@ -19,6 +19,9 @@ spring:
         output:
           destination: mqTestDefault
           contentType: application/json
+  redis:
+    host: 221.4.223.101
+    port: 6379
 eureka:
   client:
     service-url:

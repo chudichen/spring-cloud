@@ -1,17 +1,19 @@
 package com.test.order;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author chudichen
  * @date 2018/4/11
  */
-@EnableEurekaClient
-@SpringBootApplication
 @EnableFeignClients
+@SpringCloudApplication
+@ComponentScan(basePackages = "com.test")
+@EnableHystrixDashboard
 public class OrderApplication {
 
 	public static void main(String[] args) {
