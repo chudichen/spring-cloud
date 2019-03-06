@@ -1,2 +1,2 @@
 # spring-cloud
-It's a simple spring-cloud project,it contains the common components of spring-cloud and simple serivce logic.
+学习Spring Cloud各个组件的使用，搭建简单的结构，从git上下载可以直接运行。

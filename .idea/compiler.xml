@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
-        <module name="client" />
         <module name="config" />
+        <module name="dubbo" />
         <module name="eureka" />
-        <module name="order" />
-        <module name="product" />
+        <module name="feign" />
+        <module name="gateway" />
+        <module name="hello" />
+        <module name="hystrix" />
+        <module name="ribbon" />
         <module name="server" />
         <module name="server (1)" />
         <module name="server (2)" />
@@ -19,6 +21,7 @@
         <module name="user-client" />
         <module name="user-common" />
         <module name="user-server" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,9 +29,15 @@
       <module name="client" target="1.8" />
       <module name="config" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="dubbo" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="hello" target="1.8" />
+      <module name="hystrix" target="1.8" />
       <module name="order" target="1.8" />
       <module name="product" target="1.8" />
+      <module name="ribbon" target="1.8" />
       <module name="server" target="1.8" />
       <module name="server (1)" target="1.8" />
       <module name="server (2)" target="1.8" />
@@ -37,6 +46,7 @@
       <module name="user-client" target="1.8" />
       <module name="user-common" target="1.8" />
       <module name="user-server" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/config" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/dubbo" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/feign" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/gateway" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/hello" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/hystrix" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ribbon" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/zuul" vcs="svn" />
   </component>
 </project>
